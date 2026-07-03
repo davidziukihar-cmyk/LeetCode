@@ -1,5 +1,7 @@
 package org.example.solution.s0200.s0206ReverseLinkedList;
 
+import org.example.solution.common.LinkedList.ListNode;
+
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode nextCurrent;
