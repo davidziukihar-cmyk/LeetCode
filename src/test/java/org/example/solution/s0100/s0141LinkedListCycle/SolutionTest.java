@@ -4,10 +4,6 @@ import org.example.solution.common.LinkedList.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Array;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 class SolutionTest {
 
     @Test

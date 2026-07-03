@@ -11,10 +11,10 @@ public class ListNode {
     if (array.length == 0) return null;
     ListNode dummy = new ListNode(0);
     ListNode tail = dummy;
-    for (int i = 0; i < array.length; i++) {
-      tail.next = new ListNode(array[i]);
-      tail = tail.next;
-    }
+      for (int j : array) {
+          tail.next = new ListNode(j);
+          tail = tail.next;
+      }
     return dummy.next;
   }
 
@@ -27,10 +27,7 @@ public class ListNode {
       node = node.next;
       n++;
     }
-    if (node == null && n == order.length) {
-      return true;
-    }
-    return false;
+      return node == null && n == order.length;
   }
 
   public static ListNode createCycledList(int[] array, int pos) {
